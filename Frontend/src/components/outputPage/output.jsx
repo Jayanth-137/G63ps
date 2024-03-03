@@ -14,7 +14,7 @@ function Report(){
   React.useEffect(() => {
     const fetchData = async () => {
         try {
-            const response = await fetch("http://127.0.0.1:5000/suggestions", {
+            const response = await fetch("https://thyro-aid-prediction.onrender.com/suggestions", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
