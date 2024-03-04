@@ -69,7 +69,7 @@ function Form(props){
             let buffer = document.querySelector(".buffer");
             buffer.style.display = "flex";
             //======================
-        const Id=jwtDecode(localStorage.getItem('token')).userId;
+        const Id=jwtDecode(localStorage.getItem('token')).user_id;
         formData["userId"]=Id;
         try {
             const response = await fetch("https://thyro-aid-prediction.onrender.com/prediction",{
