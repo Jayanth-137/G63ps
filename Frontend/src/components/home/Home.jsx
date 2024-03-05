@@ -6,7 +6,8 @@ import { Link,useLocation,useNavigate } from "react-router-dom";
 import { useEffect} from "react";
 import {toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Test from "../images/test.png"
+import Test from "../images/test.png";
+import Footer from "../footer/footer";
 
 function Home(props){
     const location = useLocation();
@@ -76,7 +77,7 @@ function Home(props){
             </p>
             </div>
             <div className="image">
-            <span className="image__bg span"><img className="img" src={homePhoto} alt="fhv"/></span>
+            <span className="image__bg span floating"><img className="img" src={homePhoto} alt="fhv"/></span>
             </div>
             <div className="responsive_button">
             <button className="form_button" onClick={checkLogin}>Form</button>
@@ -104,6 +105,7 @@ function Home(props){
             </div>
         </div>
         </div>
+        <Footer />
         </div>
         );
     }
